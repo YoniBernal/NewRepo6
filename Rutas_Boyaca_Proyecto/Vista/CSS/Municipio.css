@@ -1,0 +1,341 @@
+﻿nav {
+    margin: 30px auto 0;
+    position: relative;
+    width: 590px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 0;
+}
+
+    nav a {
+        line-height: 50px;
+        height: 100%;
+        font-size: 15px;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        text-decoration: solid;
+        text-transform: uppercase;
+        text-align: center;
+        color: black;
+        cursor: pointer;
+    }
+
+    nav .animation {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        z-index: 0;
+        transition: all .5s ease 0s;
+        border-radius: 8px;
+    }
+
+a:nth-child(1) {
+    width: 100px;
+}
+
+a:nth-child(2) {
+    width: 110px;
+}
+
+a:nth-child(3) {
+    width: 100px;
+}
+
+a:nth-child(4) {
+    width: 160px;
+}
+
+a:nth-child(5) {
+    width: 120px;
+}
+
+nav .start-home, a:nth-child(1):hover ~ .animation {
+    width: 100px;
+    left: 0;
+    background-color: #1abc9c;
+}
+
+nav .start-about, a:nth-child(2):hover ~ .animation {
+    width: 110px;
+    left: 100px;
+    background-color: #e74c3c;
+}
+
+nav .start-blog, a:nth-child(3):hover ~ .animation {
+    width: 100px;
+    left: 210px;
+    background-color: #3498db;
+}
+
+nav .start-portefolio, a:nth-child(4):hover ~ .animation {
+    width: 160px;
+    left: 310px;
+    background-color: #9b59b6;
+}
+
+nav .start-contact, a:nth-child(5):hover ~ .animation {
+    width: 120px;
+    left: 470px;
+    background-color: #e67e22;
+}
+
+
+h1 {
+    text-align: center;
+    margin: 40px 0 40px;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Cherry Swash', cursive;
+}
+
+p {
+}
+
+span {
+    color: #ffffff;
+}
+
+.imagee {
+    margin-left: 200px;
+    margin-right: 700px;
+    border-radius: 800px;
+    width: 100px;
+    height: 100px;
+}
+
+/**/ /**/ /**/ /**/ /**/ /**/ /**/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+:root {
+    --darkBlue: hsl(233, 47%, 7%);
+    --softViolet: hsl(0, 0%, 85%);
+}
+
+.card-main {
+    max-width: 700px;
+    max-height: 200px;
+    width: 600px;
+    top: auto;
+    background-color: var(--lightBlue);
+    box-shadow: 0px 7px 29px 0px rgba(0, 255, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: left;
+    margin-left: auto;
+}
+
+.card-header {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.card-info-section {
+    padding: 80px;
+}
+
+.card-info {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsla(0, 0%, 0%, 0.75);
+    margin: 2rem 0px;
+}
+
+.card-stat {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.card-stat-header {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 15px;
+}
+
+.header-img {
+    filter: opacity(0.5) drop-shadow(0 0 10px rgba(144, 238, 144, 0.5));
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 872px) {
+    .card-info-section {
+        padding: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-info-section {
+        padding: 50px;
+    }
+
+    .card-main {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 500px) {
+    .card-info-section {
+        padding: 30px;
+    }
+
+    .card-main {
+        max-width: 300px;
+    }
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.textoD {
+    margin: 40px 0 40px;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+#toggle-widget-button {
+    margin-left: 10px;
+}
+
+
+.containerr {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.left-column {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+.right-column {
+    flex: 1 1 auto;
+}
+
+
+
+.image {
+    margin-right: 20px;
+}
+
+
+#widget-container {
+    position: fixed;
+    top: 100px;
+    left: 950px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    z-index: 999;
+}
+
+    #widget-container:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+#temperature {
+    font-size: 36px;
+}
+
+#description {
+    font-size: 18px;
+    color: #888;
+}
+
+#location {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#coordinates {
+    font-size: 14px;
+    color: #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.coordinates-icon {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s;
+    margin-left: 5px;
+}
+
+    .coordinates-icon:hover {
+        transform: scale(1.2);
+    }
+
+
+
+div.noticia {
+    width: 50%;
+    margin: 20px auto;
+    color: #212121;
+    padding: 15px;
+}
+
+    div.noticia img.izquierda {
+        float: left;
+        margin-right: 15px;
+        width: 160px;
+    }
+
+
+    div.noticia img.izquierda {
+        #42445A float: left;
+        margin-right: 15px;
+    }
+
+
+
+div.reset {
+    clear: both;
+}
+
+ht;#000000
+margin-left: 15px;
+}
+
+div.reset {
+    clear: both;
+}

@@ -1,0 +1,38 @@
+﻿/* Estilos para el nav */
+.nav {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos del menú a lo largo del nav */
+    align-items: center; /* Centra verticalmente los elementos del menú */
+    background-color: dimgrey; /* Color de fondo del nav */
+    padding: 20px; /* Espaciado interno del nav */
+}
+
+.logo {
+    color: #fff; /* Color del texto del logo */
+    font-size: 24px;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-left: 20px; /* Espaciado entre elementos del menú */
+}
+
+    li:first-child {
+        margin-left: 0; /* Elimina el margen izquierdo para el primer elemento del menú */
+    }
+
+    li a {
+        color: #fff; /* Color del texto de los enlaces del menú */
+        text-decoration: none;
+    }
+
+        li a:hover {
+            text-decoration: underline; /* Subraya el enlace al pasar el mouse sobre él */
+        }
